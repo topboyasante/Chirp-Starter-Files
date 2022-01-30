@@ -4,47 +4,80 @@ body{
     font-family: 'Inter', sans-serif;
 }
 //header for large Screens(Navigation):
-header{
-    background-color: rgb(240, 235, 226);
-    .screen-lg{
-        display: flex;
-        justify-content: space-between;
-        margin: 0em 5em;
 
-        .logo-text{
-            color: rgb(23, 141, 209);
-            margin-top: 1.4em;
+
+//Mobile
+@media screen and (max-device-width:599px)
+{
+    header{
+        background-color: rgb(240, 235, 226);
+
+        .screen-lg{
+            display: none;
         }
-        ul{
-            list-style: none;
-            li{
-                float: left;
-                padding: 0 0.9em;
-                margin-top: 0.3em;
-                a{
-                    text-decoration: none;
-                    color: gray;
-                }
+        .screen-sm{
+            display: flex;
+            justify-content: space-around;
+    
+            .logo-text{
+                color: rgb(23, 141, 209);
             }
-            .sign-in{
-                display: flex;
-                border: 0;
-                outline: 0;
-                padding: 0.3em 0.6em 0.2em 0.6em;
-                font-size: 0.5em;
-                background:rgb(23, 141, 209) ;
-                border-radius: 0.25em;
-                svg{
-                    margin-top: 0.4em;
-
-                }
-                p{
-                    padding: 0 0.8em;
-                    text-align: center;
-                    color: white;
-                }
+            svg{
+                margin-top: 1em;
             }
         }
     }
+    
+}
 
+//LargeScreens
+@media screen and (min-device-width:600px)
+{
+    header{
+        background-color: rgb(240, 235, 226);
+        .screen-lg{
+            display: flex;
+            justify-content: space-between;
+            margin: 0em 5em;
+    
+            .logo-text{
+                color: rgb(23, 141, 209);
+                margin-top: 1.4em;
+            }
+            ul{
+                list-style: none;
+                li{
+                    float: left;
+                    padding: 0 0.9em;
+                    margin-top: 0.3em;
+                    a{
+                        text-decoration: none;
+                        color: gray;
+                    }
+                }
+                .sign-in{
+                    display: flex;
+                    border: 0;
+                    outline: 0;
+                    padding: 0.3em 0.6em 0.2em 0.6em;
+                    font-size: 0.5em;
+                    background:rgb(23, 141, 209) ;
+                    border-radius: 0.25em;
+                    svg{
+                        margin-top: 0.4em;
+    
+                    }
+                    p{
+                        padding: 0 0.8em;
+                        text-align: center;
+                        color: white;
+                    }
+                }
+            }
+        }
+    
+        .screen-sm{
+            display: none;
+        }
+    }
 }
