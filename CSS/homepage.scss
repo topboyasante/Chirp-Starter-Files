@@ -10,7 +10,7 @@ body{
 @media screen and (max-device-width:599px)
 {
     header{
-        background-color: rgb(240, 235, 226);
+        background-color: rgb(252, 247, 239);
 
         .screen-lg{
             display: none;
@@ -34,7 +34,9 @@ body{
 @media screen and (min-device-width:600px)
 {
     header{
-        background-color: rgb(240, 235, 226);
+        background-color: rgb(252, 247, 239);
+
+        height: 100vh;
         .screen-lg{
             display: flex;
             justify-content: space-between;
@@ -78,6 +80,51 @@ body{
     
         .screen-sm{
             display: none;
+        }
+    }
+
+    #hero{
+        margin-top: 5em;
+        display: flex;
+        justify-content: space-around;
+        h1{
+            font-size: 3rem;
+        }
+        p{
+            font-size: 1.5rem;
+            color: gray;
+        }
+        img{
+            max-width: 50vw;
+            max-height: 60vh;
+            padding-bottom: 3em;
+        }
+
+        .flex-here{
+            display: flex;
+            .sign-in{
+                display: flex;
+                border: 0;
+                outline: 0;
+                padding: 0.3em 0.6em 0.2em 0.6em;
+                background:rgb(23, 141, 209) ;
+                border-radius: 0.25em;
+                svg{
+                    margin-top: 0.8em;
+                }
+                p{
+                    padding: 0 0.8em;
+                    text-align: center;
+                    color: white;
+                    font-size: 0.8rem;
+                }
+            }
+            a{
+                margin-left: 3em;
+                margin-top: 0.8em;
+                text-decoration: none;
+                color:rgb(23, 141, 209) ;
+            }
         }
     }
 }

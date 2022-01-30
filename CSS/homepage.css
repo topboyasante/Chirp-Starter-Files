@@ -6,7 +6,7 @@ body {
 
 @media screen and (max-device-width: 599px) {
   header {
-    background-color: #f0ebe2;
+    background-color: #fcf7ef;
   }
   header .screen-lg {
     display: none;
@@ -28,7 +28,8 @@ body {
 
 @media screen and (min-device-width: 600px) {
   header {
-    background-color: #f0ebe2;
+    background-color: #fcf7ef;
+    height: 100vh;
   }
   header .screen-lg {
     display: -webkit-box;
@@ -76,6 +77,56 @@ body {
   }
   header .screen-sm {
     display: none;
+  }
+  #hero {
+    margin-top: 5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #hero h1 {
+    font-size: 3rem;
+  }
+  #hero p {
+    font-size: 1.5rem;
+    color: gray;
+  }
+  #hero img {
+    max-width: 50vw;
+    max-height: 60vh;
+    padding-bottom: 3em;
+  }
+  #hero .flex-here {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #hero .flex-here .sign-in {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 0;
+    outline: 0;
+    padding: 0.3em 0.6em 0.2em 0.6em;
+    background: #178dd1;
+    border-radius: 0.25em;
+  }
+  #hero .flex-here .sign-in svg {
+    margin-top: 0.8em;
+  }
+  #hero .flex-here .sign-in p {
+    padding: 0 0.8em;
+    text-align: center;
+    color: white;
+    font-size: 0.8rem;
+  }
+  #hero .flex-here a {
+    margin-left: 3em;
+    margin-top: 0.8em;
+    text-decoration: none;
+    color: #178dd1;
   }
 }
 /*# sourceMappingURL=homepage.css.map */
