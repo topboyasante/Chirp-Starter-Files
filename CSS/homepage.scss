@@ -30,12 +30,17 @@ body{
     
 }
 
+//Tablets
+@media screen and (min-device-width:800px) and (max-device-width:900px)
+{
+
+}
+
 //LargeScreens
 @media screen and (min-device-width:600px)
 {
     header{
         background-color: rgb(252, 247, 239);
-
         height: 100vh;
         .screen-lg{
             display: flex;
@@ -100,6 +105,9 @@ body{
             padding-bottom: 3em;
         }
 
+        .hero-text-section{
+            margin-top: -3em;
+        }
         .flex-here{
             display: flex;
             .sign-in{
@@ -124,6 +132,21 @@ body{
                 margin-top: 0.8em;
                 text-decoration: none;
                 color:rgb(23, 141, 209) ;
+            }
+        }
+
+        .images{
+            margin-left: 1em;
+            img{
+                margin-left: -1.5em;
+            }
+        }
+
+        .join-text{
+            margin-top: -1em;
+            span{
+                color: rgb(23, 141, 209);
+                font-weight: bold;
             }
         }
     }

@@ -98,6 +98,9 @@ body {
     max-height: 60vh;
     padding-bottom: 3em;
   }
+  #hero .hero-text-section {
+    margin-top: -3em;
+  }
   #hero .flex-here {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -127,6 +130,19 @@ body {
     margin-top: 0.8em;
     text-decoration: none;
     color: #178dd1;
+  }
+  #hero .images {
+    margin-left: 1em;
+  }
+  #hero .images img {
+    margin-left: -1.5em;
+  }
+  #hero .join-text {
+    margin-top: -1em;
+  }
+  #hero .join-text span {
+    color: #178dd1;
+    font-weight: bold;
   }
 }
 /*# sourceMappingURL=homepage.css.map */
